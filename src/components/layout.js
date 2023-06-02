@@ -11,6 +11,7 @@ import {
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
+      <header>{pageTitle}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -21,6 +22,11 @@ const Layout = ({ pageTitle, children }) => {
           <li className= {navLinkItem}>
             <Link to="/about" className={navLinkText}>
               About
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog" className={navLinkText}>
+              Blog
             </Link>
           </li>
         </ul>
